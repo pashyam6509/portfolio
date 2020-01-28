@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p:400,500,700,800|Roboto:400,400i,500,500i,700,700i&display=swap&subset=cyrillic-ext" rel="stylesheet">
+</head>
+<body>
+    <header class="header ">
+        <div class="header__top-nav">
+            <div class="header__logo">
+                АК
+            </div>
+
+            <div class="header__nav">
+                <ul class="nav__list">
+                    <li><a class="nav__link" data-scroll="#portfolio" href="#">Главная</a></li>
+                    <li><a class="nav__link"  href="#">Работы</a></li>
+                    <li><a class="nav__link"  href="#">Контакты</a></li>
+                </ul>
+            </div>
+
+            <div class="header__social">
+                <a href="https://www.instagram.com/kar_kas/?hl=ru" class="social-link" target="_blank">
+                    <svg class="social-icon social-icon--inst" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram" class="svg-inline--fa fa-instagram fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg>
+                </a>
+                <a href="https://github.com/pashyam6509" class="social-link" target="_blank">
+                    <svg class="social-icon social-icon--git" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github" class="svg-inline--fa fa-github fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg>
+
+                </a>
+                <a href="https://vk.com/id547196547" class="social-link" target="_blank">
+                    <svg class="social-icon social-icon--vk" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="vk" class="svg-inline--fa fa-vk fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M545 117.7c3.7-12.5 0-21.7-17.8-21.7h-58.9c-15 0-21.9 7.9-25.6 16.7 0 0-30 73.1-72.4 120.5-13.7 13.7-20 18.1-27.5 18.1-3.7 0-9.4-4.4-9.4-16.9V117.7c0-15-4.2-21.7-16.6-21.7h-92.6c-9.4 0-15 7-15 13.5 0 14.2 21.2 17.5 23.4 57.5v86.8c0 19-3.4 22.5-10.9 22.5-20 0-68.6-73.4-97.4-157.4-5.8-16.3-11.5-22.9-26.6-22.9H38.8c-16.8 0-20.2 7.9-20.2 16.7 0 15.6 20 93.1 93.1 195.5C160.4 378.1 229 416 291.4 416c37.5 0 42.1-8.4 42.1-22.9 0-66.8-3.4-73.1 15.4-73.1 8.7 0 23.7 4.4 58.7 38.1 40 40 46.6 57.9 69 57.9h58.9c16.8 0 25.3-8.4 20.4-25-11.2-34.9-86.9-106.7-90.3-111.5-8.7-11.2-6.2-16.2 0-26.2.1-.1 72-101.3 79.4-135.6z"></path></svg>
+                </a>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="header__info">
+                <div class="header-img">
+                    <img class="header-img-pc" src="img/header/header-img.jpg" alt="Компьютер">
+                </div>
+                <div class="header-content">
+                    <h1 class="header__title">
+                        Андрей <br> Ким
+                    </h1>
+                    <div class="header__desc">Верстальщик сайтов, веб-разработчик. Оперативная верстка. Работаю с соблюдением сроков и выполнением ТЗ.</div>
+
+                    <a class="header__button-meet" href="#">Познакомиться</a>
+                    <a class="header__button-contacts" href="#">Контакты</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="header__background"></div>
+
+        <div class="header__bottom">
+            <div class="container">
+                <div class="header__bottom-content">
+                    <div class="header__bottom-skills">
+
+                        <div class="header__title-skills">
+                            <h3 class="header__bottom-title">Что я умею:</h3>
+                        </div>
+
+                        <ul class="skill-list">
+                            <li>— Pixel Perfect, полное соответствие макету.</li>
+                            <li>— верстаю с сеткой или без.</li>
+                            <li>— адаптивная верстка под мобильные устройства.</li>
+                            <li>— оптимизация по retina экраны.</li>
+                            <li>— с Bootstrap и без него.</li>
+                        </ul>
+                        
+                        <a class="header__works-link" href="#">Смотреть работы</a>
+                    </div>
+
+                    <div class="header__bottom-contacts">
+                        <div class="header__title-contacts">
+                            <h3 class="header__bottom-title">На связи:</h3>
+                        </div>
+
+                        <div class="header__bottom-icons">
+                            <a class="bottom-icons-link" href="https://github.com/pashyam6509">
+                                <img src="img/header/github.png" alt="GitHub">
+                            </a>
+                            <a class="bottom-icons-link" href="https://t.me/pashyam6509">
+                                <img src="img/header/telegram.png" alt="Telegram">
+                            </a>
+                            <a class="bottom-icons-link" href="https://vk.com/id547196547">
+                                <img src="img/header/vk.png" alt="Vk">
+                            </a>
+                            <a class="bottom-icons-link" href="https://www.facebook.com/profile.php?id=100008270923968">
+                                <img src="img/header/facebook.png" alt="Facebook">
+                            </a>
+                        </div>
+
+                        <a class="header__bottom-email" href="#">andreyka-kim-1997@mail.ru</a>
+                    </div>
+                </div> 
+            </div>   
+        </div>
+
+    </header>
+
+    <main>
+        <section class="section-portfolio" id="portfolio">
+            <div class="container">
+                <h2 class="portfolio__title">Портфолио</h2>
+
+                <div class="portfolio__works">
+                    <ul>
+                        <li class="portfolio__works-type"><a class="portfolio__works-link" href="#">Все работы</a></li>
+                        <li class="portfolio__works-type"><a class="portfolio__works-link" href="#">Bootstrap</a></li>
+                        <li class="portfolio__works-type"><a class="portfolio__works-link" href="#">Wordpress</a></li>
+                        <li class="portfolio__works-type"><a class="portfolio__works-link" href="#">Frontend</a></li>
+                    </ul>
+                </div>
+
+                <div class="portfolio__wrapper">
+                    <div class="portfolio__card">
+                        <div class="card__img-wrapper">
+                            <div class="card__img">
+                                <img class="portfolio__card-img" src="./img/portfolio/foresr-travel.jpg" alt="ForestTravel">
+                            </div>
+                            <a href="#" class="card__button">Смотреть проект</a>
+                        </div>
+                        <h4 class="portfolio__card-title">Верстка “Форест тревел”</h4>
+                        <div class="portfolio__card-desc">Верстка многостраничного сайта. </div>
+                    </div>
+                    <div class="portfolio__card">
+                        <div class="card__img-wrapper">
+                            <div class="card__img">
+                                <img class="portfolio__card-img" src="./img/portfolio/dream.jpg" alt="Dream">
+                            </div>
+                            <a href="#" class="card__button">Смотреть проект</a>
+                        </div>
+                        <h4 class="portfolio__card-title">Верстка “Форест тревел”</h4>
+                        <div class="portfolio__card-desc">Верстка многостраничного сайта. </div>
+                    </div>
+                </div>
+
+                <div class="portfolio__wrapper">
+                    <div class="portfolio__card">
+                        <div class="card__img-wrapper">
+                            <div class="card__img">
+                                <img class="portfolio__card-img" src="./img/portfolio/coffee.jpg" alt="Coffee">
+                            </div>
+                            <a href="#" class="card__button">Смотреть проект</a>
+                        </div>        
+                        <h4 class="card__title">Верстка “Мир Авто”</h4>
+                        <div class="card__desc">Верстка многостраничного сайта. </div>
+                    </div>
+
+                    <div class="portfolio__card">
+                        <div class="card__img-wrapper">
+                            <div class="card__img">
+                                <img class="portfolio__card-img" src="./img/portfolio/iphone.jpg" alt="Coffee">
+                            </div>
+                            <a href="#" class="card__button">Смотреть проект</a>
+                        </div>
+                        <h4 class="card__title">Верстка “Мир Авто”</h4>
+                        <div class="card__desc">Верстка многостраничного сайта. </div>
+                    </div>
+
+                    <div class="portfolio__card">
+                        <div class="card__img-wrapper">
+                            <div class="card__img">
+                                <img class="portfolio__card-img" src="./img/portfolio/carworld.jpg" alt="Coffee">
+                            </div>
+                            <a href="#" class="card__button">Смотреть проект</a>
+                        </div>
+                        <h4 class="card__title">Верстка “Мир Авто”</h4>
+                        <div class="card__desc">Верстка многостраничного сайта. </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+</body>
+</html>
