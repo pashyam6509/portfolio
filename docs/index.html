@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p:400,500,700,800|Roboto:400,400i,500,500i,700,700i&display=swap&subset=cyrillic-ext" rel="stylesheet">
 </head>
 <body>
-    <header class="header ">
+    <header class="header">
         <div class="header__top-nav">
             <div class="header__logo">
                 АК
@@ -17,9 +17,9 @@
 
             <div class="header__nav">
                 <ul class="nav__list">
-                    <li><a class="nav__link" data-scroll="#portfolio" href="#">Главная</a></li>
-                    <li><a class="nav__link"  href="#">Работы</a></li>
-                    <li><a class="nav__link"  href="#">Контакты</a></li>
+                    <li><a class="nav__link"  href="#!">Главная</a></li>
+                    <li><a class="nav__link"  href="#!">Работы</a></li>
+                    <li><a class="nav__link"  href="#!">Контакты</a></li>
                 </ul>
             </div>
 
@@ -48,8 +48,8 @@
                     </h1>
                     <div class="header__desc">Верстальщик сайтов, веб-разработчик. Оперативная верстка. Работаю с соблюдением сроков и выполнением ТЗ.</div>
 
-                    <a class="header__button-meet" href="#">Познакомиться</a>
-                    <a class="header__button-contacts" href="#">Контакты</a>
+                    <a class="header__button-meet" href="#!">Познакомиться</a>
+                    <a class="header__button-contacts" href="#!">Контакты</a>
                 </div>
             </div>
         </div>
@@ -105,21 +105,21 @@
     </header>
 
     <main>
-        <section class="section-portfolio" id="portfolio">
+        <section class="section-portfolio" >
             <div class="container">
                 <h2 class="portfolio__title">Портфолио</h2>
 
                 <div class="portfolio__works">
                     <ul>
-                        <li class="portfolio__works-type"><a class="portfolio__works-link" href="#">Все работы</a></li>
-                        <li class="portfolio__works-type"><a class="portfolio__works-link" href="#">Bootstrap</a></li>
-                        <li class="portfolio__works-type"><a class="portfolio__works-link" href="#">Wordpress</a></li>
-                        <li class="portfolio__works-type"><a class="portfolio__works-link" href="#">Frontend</a></li>
+                        <li class="portfolio__works-type "><a class="portfolio__works-link filter active" data-filter="all" href="#!">Все работы</a></li>
+                        <li class="portfolio__works-type"><a class="portfolio__works-link filter" data-filter=".bootstrap" href="#!">Bootstrap</a></li>
+                        <li class="portfolio__works-type"><a class="portfolio__works-link filter" data-filter=".wp" href="#!">Wordpress</a></li>
+                        <li class="portfolio__works-type"><a class="portfolio__works-link filter" data-filter=".front" href="#!">Frontend</a></li>
                     </ul>
                 </div>
 
-                <div class="portfolio__wrapper">
-                    <div class="portfolio__card">
+                <div class="portfolio__wrapper" id="portfolio-projects1">
+                    <div class="portfolio__card mix">
                         <div class="card__img-wrapper">
                             <div class="card__img">
                                 <img class="portfolio__card-img" src="./img/portfolio/foresr-travel.jpg" alt="ForestTravel">
@@ -129,7 +129,7 @@
                         <h4 class="portfolio__card-title">Верстка “Форест тревел”</h4>
                         <div class="portfolio__card-desc">Верстка многостраничного сайта. </div>
                     </div>
-                    <div class="portfolio__card">
+                    <div class="portfolio__card mix">
                         <div class="card__img-wrapper">
                             <div class="card__img">
                                 <img class="portfolio__card-img" src="./img/portfolio/dream.jpg" alt="Dream">
@@ -141,8 +141,8 @@
                     </div>
                 </div>
 
-                <div class="portfolio__wrapper">
-                    <div class="portfolio__card">
+                <div class="portfolio__wrapper" id="portfolio-projects2">
+                    <div class="portfolio__card mix bootstrap">
                         <div class="card__img-wrapper">
                             <div class="card__img">
                                 <img class="portfolio__card-img" src="./img/portfolio/coffee.jpg" alt="Coffee">
@@ -153,7 +153,7 @@
                         <div class="card__desc">Верстка многостраничного сайта. </div>
                     </div>
 
-                    <div class="portfolio__card">
+                    <div class="portfolio__card mix wp bootstrap">
                         <div class="card__img-wrapper">
                             <div class="card__img">
                                 <img class="portfolio__card-img" src="./img/portfolio/iphone.jpg" alt="Coffee">
@@ -164,7 +164,7 @@
                         <div class="card__desc">Верстка многостраничного сайта. </div>
                     </div>
 
-                    <div class="portfolio__card">
+                    <div class="portfolio__card mix front">
                         <div class="card__img-wrapper">
                             <div class="card__img">
                                 <img class="portfolio__card-img" src="./img/portfolio/carworld.jpg" alt="Coffee">
@@ -177,7 +177,131 @@
                 </div>
             </div>
         </section>
+
+        <section class="section-work ">
+            <div class="container">
+                <h2 class="section-work__title">Как я работаю</h2>
+                <div class="section-work-wrapper">
+                    <div class="section-work__block">
+                        <div class="section-work__block-img">
+                            <img src="img/work/icon1.png" alt="Icon1">
+                        </div>
+                        <div class="section-work__block-content">
+                            <h3 class="section-work__block-title">Оцениваю макет</h3>
+                            <div class="section-work__block-desc">Оцениваю объем работы, <br> сложность, нюансы. <br> Задаю вопросы.</div>
+                            <div class="section-work__block-time">Время: 2 - 4 часа</div>
+                        </div>
+                    </div>
+                    <div class="section-work__block">
+                        <div class="section-work__block-img">
+                            <img src="img/work/icon2.png" alt="Icon1">
+                        </div>
+                        <div class="section-work__block-content">
+                            <h3 class="section-work__block-title">ТЗ, смета и график работ</h3>
+                            <div class="section-work__block-desc">Согласовываем техническое задание и график работ по проекту. Осмечиваю стоимость по этапам работы.</div>
+                            <div class="section-work__block-time">Время: 2 - 4 часа</div>
+                        </div>
+                    </div>
+                    <div class="section-work__block">
+                        <div class="section-work__block-img">
+                            <img src="img/work/icon3.png" alt="Icon1">
+                        </div>
+                        <div class="section-work__block-content">
+                            <h3 class="section-work__block-title">Вы держите руку на пульсе</h3>
+                            <div class="section-work__block-desc">Выдаю клиенту доступ к GitHub репозиторию и доске Trello. Вы в любое время можете видеть актуальное состояние проекта и задач.</div>
+                            <div class="section-work__block-time">Время: 2 часа</div>
+                        </div>
+                    </div>
+                    <div class="section-work__block">
+                        <div class="section-work__block-img">
+                            <img src="img/work/icon4.png" alt="Icon1">
+                        </div>
+                        <div class="section-work__block-content">
+                            <h3 class="section-work__block-title">Выполняю каждый этап</h3>
+                            <div class="section-work__block-desc">Поочередно выполняю каждый этап работы. Передаю результаты. Заказчик производит поэтапную оплату.</div>
+                            <div class="section-work__block-time">Время: 2 - 4 часа</div>
+                        </div>
+                    </div>
+                    <div class="section-work__block">
+                        <div class="section-work__block-img">
+                            <img src="img/work/icon5.png" alt="Icon1">
+                        </div>
+                        <div class="section-work__block-content">
+                            <h3 class="section-work__block-title">Финальное ревью проекта</h3>
+                            <div class="section-work__block-desc">Проект готов. Финальное ревью и полировка до идеального состояния. Передаю файлы проекта, заливаю сайт на хостинг заказчика.</div>
+                            <div class="section-work__block-time">Время: 2 - 4 часа</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-contacts">
+            <div class="container">
+                <h2 class="section-contacts__title">Контакты</h2>
+
+                <div class="section-contacts__wrapper">
+                    <div class="section-contacts__content">
+                        <div class="section-contacts__desc">Если вы ищите специалиста по верстке сайтов, front-end разработчика в команду или для работы над проектом —  напишите мне.</div>
+
+                        <div class="section-contacts__info">
+                            <ul class="contacts-type">
+                                <li>Email</li>
+                                <li>Skype</li>
+                                <li>Телефон</li>
+                                <li>Адрес</li>
+                            </ul>
+                            <ul class="contacts-data">
+                                <li><a href="mailto:info@webcademy.ru">Andreyka-kim-1997@mail.ru</a></li>
+                                <li>Отстутствует</li>
+                                <li><a href="tel:+821057737357">+82 10 5773 7357</a></li>
+                                <li>Сеул, Южная Корея</li>
+                            </ul>
+                        </div>
+
+                        <div class="header__bottom-icons contact-icons">
+                            <a class="bottom-icons-link" href="https://github.com/pashyam6509">
+                                <img src="img/header/github.png" alt="GitHub">
+                            </a>
+                            <a class="bottom-icons-link" href="https://t.me/pashyam6509">
+                                <img src="img/header/telegram.png" alt="Telegram">
+                            </a>
+                            <a class="bottom-icons-link" href="https://vk.com/id547196547">
+                                <img src="img/header/vk.png" alt="Vk">
+                            </a>
+                            <a class="bottom-icons-link" href="https://www.facebook.com/profile.php?id=100008270923968">
+                                <img src="img/header/facebook.png" alt="Facebook">
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="section-contacts__form">
+                        <form action="" class="contacts-form">
+                            <div class="form-row">
+                                <input type="text" class="form-row__input" name="email">
+                                <span class="fake-placeholder">Ваш email</span>
+                            </div>
+                            <div class="form-row">
+                                <input type="text" class="form-row__input" name="topic">
+                                <span class="fake-placeholder">Тема сообщения</span>
+                            </div>
+
+                            <div class="form-row">
+                                <textarea class="form-row__input form-row__input--textarea" name="message" rows="3"></textarea>
+                                <span class="fake-placeholder">Текст сообщения</span>
+                            </div>
+
+                            <input type="submit" class="form-button" name="form-button" value="Отправить">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     
+
+    <script src="libs/jquery/jquery-3.4.1.min.js"></script>
+    <script src="libs/mixitup2/jquery.mixitup.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

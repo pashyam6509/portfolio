@@ -24,7 +24,12 @@
         width: 418px;
         height: 12px;
         z-index: -1;
+        transition: all .5s ease;
     }    
+}
+
+.portfolio__title:hover::after{
+    background-color:#ea736d;
 }
 
 .portfolio__works{
@@ -49,6 +54,10 @@
     &:hover{
         color: #ea736d;
     }
+}
+
+.active{
+    color: #ed574f;
 }
 
 .portfolio__wrapper{
@@ -137,7 +146,13 @@
     color: rgb(0, 0, 0);
     font-weight: 700;
     line-height: 1.2;
-    margin-bottom: 10px;    
+    margin-bottom: 10px;
+    
+    &:hover{
+        cursor: pointer;
+        text-decoration: underline;
+        color: #ed574f;
+    }
 }
 
 .portfolio__card-desc{
@@ -153,6 +168,12 @@
     font-weight: 700;
     line-height: 1.2;
     margin-bottom: 10px;
+
+    &:hover{
+        cursor: pointer;
+        text-decoration: underline;
+        color: #ed574f;
+    }
 }
 
 .card__desc{
