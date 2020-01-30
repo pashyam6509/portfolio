@@ -1,6 +1,9 @@
 $(document).ready(function (){
     $('#portfolio-projects1').mixItUp();
     $('#portfolio-projects2').mixItUp();
+    $('#portfolio-projects3').mixItUp();
+    $('#portfolio-projects4').mixItUp();
+    $('#portfolio-projects2').mixItUp();
 
 });
 
@@ -65,7 +68,7 @@ function ajaxFormSubmit() {
 
 
         success: function (html) {
-            $("#contact-form").slideup(800);
+            $("#contact-form").slideUp(800);
             $('#answer').html(html);
         }
     });

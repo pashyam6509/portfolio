@@ -11,14 +11,14 @@
 <body>
     <header class="header">
         <div class="header__top-nav">
-            <div class="header__logo">
+            <a href="index.html" class="header__logo">
                 АК
-            </div>
+            </a>
 
             <div class="header__nav">
                 <ul class="nav__list">
-                    <li><a class="nav__link"  href="#!">Главная</a></li>
-                    <li><a class="nav__link"  href="#!">Работы</a></li>
+                    <li><a class="nav__link"  href="index.html">Главная</a></li>
+                    <li><a class="nav__link"  href="works.html">Работы</a></li>
                     <li><a class="nav__link"  href="#!">Контакты</a></li>
                 </ul>
             </div>
@@ -73,7 +73,7 @@
                             <li>— с Bootstrap и без него.</li>
                         </ul>
                         
-                        <a class="header__works-link" href="#">Смотреть работы</a>
+                        <a class="header__works-link" href="works.html">Смотреть работы</a>
                     </div>
 
                     <div class="header__bottom-contacts">
@@ -96,7 +96,7 @@
                             </a>
                         </div>
 
-                        <a class="header__bottom-email" href="#">andreyka-kim-1997@mail.ru</a>
+                        <a class="header__bottom-email" href="mailto:andreyka-kim-1997@mail.ru">andreyka-kim-1997@mail.ru</a>
                     </div>
                 </div> 
             </div>   
@@ -241,6 +241,7 @@
                 <h2 class="section-contacts__title">Контакты</h2>
 
                 <div class="section-contacts__wrapper">
+                    <div class="contacts-background"></div>
                     <div class="section-contacts__content">
                         <div class="section-contacts__desc">Если вы ищите специалиста по верстке сайтов, front-end разработчика в команду или для работы над проектом —  напишите мне.</div>
 
@@ -260,16 +261,16 @@
                         </div>
 
                         <div class="header__bottom-icons contact-icons">
-                            <a class="bottom-icons-link" href="https://github.com/pashyam6509">
+                            <a class="bottom-icons-link" target=_blank href="https://github.com/pashyam6509">
                                 <img src="img/header/github.png" alt="GitHub">
                             </a>
-                            <a class="bottom-icons-link" href="https://t.me/pashyam6509">
+                            <a class="bottom-icons-link" target=_blank href="https://t.me/pashyam6509">
                                 <img src="img/header/telegram.png" alt="Telegram">
                             </a>
-                            <a class="bottom-icons-link" href="https://vk.com/id547196547">
+                            <a class="bottom-icons-link" target=_blank href="https://vk.com/id547196547">
                                 <img src="img/header/vk.png" alt="Vk">
                             </a>
-                            <a class="bottom-icons-link" href="https://www.facebook.com/profile.php?id=100008270923968">
+                            <a class="bottom-icons-link" target=_blank href="https://www.facebook.com/profile.php?id=100008270923968">
                                 <img src="img/header/facebook.png" alt="Facebook">
                             </a>
                         </div>
@@ -278,9 +279,9 @@
                     <div class="section-contacts__form">
                         <form action="" class="contacts-form" id="contact-form">
 
-                            <input type="hidden" name="project_name" value="myportfolio.ru ">
+                            <input type="hidden" name="project_name" value="http://cg79569.tmweb.ru/port/index.html"> <!--адрес моего хоста-->
                             <input type="hidden" name="admin_email" value="Andreyka-kim-1997@mail.ru">
-                            <input type="hidden" name="email_from " value="info@myportfolio.ru ">
+                            <input type="hidden" name="email_from" value="info@cg79569.tmweb.ru/port/index.html"> <!--адрес моего хоста-->
                             <div class="form-row">
                                 <input type="text" class="form-row__input" name="email">
                                 <span class="fake-placeholder">Ваш email</span>
@@ -311,7 +312,8 @@
                 Этот сайт сделал в рамках прохождения обучения по верстке на курсах от <a class="footer__link" href="https://webcademy.ru/">WebCademy.ru</a></div>
         </div>
     </footer>
-    
+
+    <script src="https://kit.fontawesome.com/12fc8f6466.js" crossorigin="anonymous"></script>
     <script src="libs/jquery/jquery-3.4.1.min.js"></script>
     <script src="libs/mixitup2/jquery.mixitup.min.js"></script>
     <script src="libs/jquery.validate/jquery.validate.js"></script>
