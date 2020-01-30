@@ -23,3 +23,53 @@ for (let i = 0; i < formRowsInputs.length; i++){
         }
     })
 }
+
+// form validate
+$('#contact-form').validate({
+    rules:{
+        email: {
+            required: true,
+            email: true
+        },
+        theme: {
+            required: true
+        },
+        message:{
+            required:true
+        }
+    },
+    messages:{
+        email: {
+            required: 'Введите ваш Email',
+            email: 'Отсутствует символ @'
+        },
+        theme: {
+            required: 'Введите тему сообщения'
+        },
+        message: {
+            required: 'Введите текст сообщения'
+        }
+    },
+    submitHandler: function (form){
+     ajaxFormSubmit(); 
+    }
+}); 
+
+function ajaxFormSubmit() {
+    let string = $("#contact-form").serialize(); //сохранение всех данных введеннуб в форму
+
+    $.ajax({
+        type: "POST",
+        url: "php/mail.php",
+        data: string,
+
+
+        success: function (html) {
+            $("#contact-form").slideup(800);
+            $('#answer').html(html);
+        }
+    });
+
+    return false;
+}
+

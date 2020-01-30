@@ -25,6 +25,12 @@
         height: 12px;
         z-index: -1;
         background-color: #fbdc4d;
+
+        transition: all 0.5s ease-in;
+    }
+
+    &:hover::after{
+        background-color:#ea736d ;
     }
 }
 
@@ -152,3 +158,38 @@
     height: auto;
 }
 
+.form-button{
+    font-size: 22px;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    border: 0;
+    border-radius: 30px;
+    outline: none;
+    background-color: rgb(251, 220, 77);
+    width: 200px;
+    height: 64px;
+    cursor: pointer;
+
+    &:hover{
+        background-color: #ffd200;
+    }
+
+    &:active{
+        background-color: #e1bc10;
+    }
+}
+
+.error{
+    color:red;
+    font-size: 14px;
+    position: relative;
+
+    &:after{
+        content: '\f106';
+        font-family: 'fontAwesome';
+        position: absolute;
+        top: -10px;
+        left: 0;
+        font-size: 15px;
+    }
+}

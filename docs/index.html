@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -276,13 +276,17 @@
 
                     </div>
                     <div class="section-contacts__form">
-                        <form action="" class="contacts-form">
+                        <form action="" class="contacts-form" id="contact-form">
+
+                            <input type="hidden" name="project_name" value="myportfolio.ru ">
+                            <input type="hidden" name="admin_email" value="Andreyka-kim-1997@mail.ru">
+                            <input type="hidden" name="email_from " value="info@myportfolio.ru ">
                             <div class="form-row">
                                 <input type="text" class="form-row__input" name="email">
                                 <span class="fake-placeholder">Ваш email</span>
                             </div>
                             <div class="form-row">
-                                <input type="text" class="form-row__input" name="topic">
+                                <input type="text" class="form-row__input" name="theme">
                                 <span class="fake-placeholder">Тема сообщения</span>
                             </div>
 
@@ -293,15 +297,24 @@
 
                             <input type="submit" class="form-button" name="form-button" value="Отправить">
                         </form>
+                        <div id="answer"></div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
-    
 
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__copyright">© 2019 — Андрей Ким</div>
+                <p>Веб-разработик из Алматы, занимаюсь версткой и созданием сайтов. </p>
+                Этот сайт сделал в рамках прохождения обучения по верстке на курсах от <a class="footer__link" href="https://webcademy.ru/">WebCademy.ru</a></div>
+        </div>
+    </footer>
+    
     <script src="libs/jquery/jquery-3.4.1.min.js"></script>
     <script src="libs/mixitup2/jquery.mixitup.min.js"></script>
+    <script src="libs/jquery.validate/jquery.validate.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

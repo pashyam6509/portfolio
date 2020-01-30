@@ -48,11 +48,12 @@
         z-index: -1; 
         background-color: rgb(251, 220, 77);
 
+        transition: all 0.5s ease-in;
     }
-}
 
-.header__logo:hover .header__logo::after{
-    background-color: #ea736d;
+    &:hover::after{
+        background-color: #ea736d;
+    }
 }
 
 .nav__list{
@@ -186,8 +187,11 @@
         left: -3px;
         width: 211px;
         height: 12px;
-        z-index: -1; 
         background-color: rgb(251, 220, 77);
+        z-index: -1; 
+
+        transition: all 0.5s ease-in;
+
     }
 
     &:before{
@@ -199,6 +203,16 @@
         width: 382px;
         background-color: rgb(251, 220, 77);
         z-index: -1;
+
+        transition: all 0.5s ease-in;
+    }
+
+    &:hover::before{
+        background-color:#ea736d;
+    }
+
+    &:hover::after{
+        background: #ea736d;
     }
 }
 
