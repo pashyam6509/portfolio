@@ -9,7 +9,13 @@
     <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p:400,500,700,800|Roboto:400,400i,500,500i,700,700i&display=swap&subset=cyrillic-ext" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
+    <ul id="page-nav">
+        <li class="active"><a href="#header"></a></li>
+        <li><a href="#portfolio"></a></li>
+        <li><a href="#works"></a></li>
+        <li><a href="#contacts"></a></li>
+    </ul>
+    <header class="header" id="header">
         <div class="header__top-nav">
             <a href="index.html" class="header__logo">
                 АК
@@ -105,7 +111,7 @@
     </header>
 
     <main>
-        <section class="section-portfolio" >
+        <section class="section-portfolio" id="portfolio">
             <div class="container">
                 <h2 class="portfolio__title">Портфолио</h2>
 
@@ -178,7 +184,7 @@
             </div>
         </section>
 
-        <section class="section-work ">
+        <section class="section-work" id="works">
             <div class="container">
                 <h2 class="section-work__title">Как я работаю</h2>
                 <div class="section-work-wrapper">
@@ -236,7 +242,7 @@
             </div>
         </section>
 
-        <section class="section-contacts">
+        <section class="section-contacts" id="contacts">
             <div class="container">
                 <h2 class="section-contacts__title">Контакты</h2>
 
@@ -317,6 +323,7 @@
     <script src="libs/jquery/jquery-3.4.1.min.js"></script>
     <script src="libs/mixitup2/jquery.mixitup.min.js"></script>
     <script src="libs/jquery.validate/jquery.validate.js"></script>
+    <script src="libs/nav.js/nav.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

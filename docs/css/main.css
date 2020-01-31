@@ -928,4 +928,25 @@ button {
   background-position: center;
   background-repeat: no-repeat;
 }
+#page-nav {
+  position: fixed;
+  right: 50px;
+  top: 50%;
+  z-index: 100;
+}
+#page-nav li {
+  width: 14px;
+  height: 14px;
+  background-color: #89b4cb;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  transition: 0.5s;
+}
+#page-nav li a {
+  display: block;
+  height: 100%;
+}
+#page-nav li.active {
+  background-color: #ea736d;
+}
 /*# sourceMappingURL=main.css.map */
