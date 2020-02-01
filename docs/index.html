@@ -1,21 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p:400,500,700,800|Roboto:400,400i,500,500i,700,700i&display=swap&subset=cyrillic-ext" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <ul id="page-nav">
+    <ul id="page-nav" class="none">
         <li class="active"><a href="#header"></a></li>
         <li><a href="#portfolio"></a></li>
         <li><a href="#works"></a></li>
         <li><a href="#contacts"></a></li>
     </ul>
-    <header class="header" id="header">
+    <header class="header none" id="header">
         <div class="header__top-nav">
             <a href="index.html" class="header__logo">
                 АК
@@ -60,7 +60,9 @@
             </div>
         </div>
 
-        <div class="header__background"></div>
+        <div class="header__background">
+            <img src="img/header/headerbg.png" alt="">
+        </div>
 
         <div class="header__bottom">
             <div class="container">
@@ -72,11 +74,11 @@
                         </div>
 
                         <ul class="skill-list">
-                            <li>— Pixel Perfect, полное соответствие макету.</li>
-                            <li>— верстаю с сеткой или без.</li>
-                            <li>— адаптивная верстка под мобильные устройства.</li>
-                            <li>— оптимизация по retina экраны.</li>
-                            <li>— с Bootstrap и без него.</li>
+                            <li>Pixel Perfect, полное соответствие макету.</li>
+                            <li>верстаю с сеткой или без.</li>
+                            <li>адаптивная верстка под мобильные устройства.</li>
+                            <li>оптимизация по retina экраны.</li>
+                            <li>с Bootstrap и без него.</li>
                         </ul>
                         
                         <a class="header__works-link" href="works.html">Смотреть работы</a>
@@ -110,8 +112,8 @@
 
     </header>
 
-    <main>
-        <section class="section-portfolio" id="portfolio">
+    <main class="">
+        <section class="section-portfolio " id="portfolio">
             <div class="container">
                 <h2 class="portfolio__title">Портфолио</h2>
 
@@ -184,7 +186,7 @@
             </div>
         </section>
 
-        <section class="section-work" id="works">
+        <section class="section-work none" id="works">
             <div class="container">
                 <h2 class="section-work__title">Как я работаю</h2>
                 <div class="section-work-wrapper">
@@ -194,11 +196,11 @@
                         </div>
                         <div class="section-work__block-content">
                             <h3 class="section-work__block-title">Оцениваю макет</h3>
-                            <div class="section-work__block-desc">Оцениваю объем работы, <br> сложность, нюансы. <br> Задаю вопросы.</div>
+                            <div class="section-work__block-desc">Оцениваю объем работы, сложность,<br> нюансы. Задаю вопросы.</div>
                             <div class="section-work__block-time">Время: 2 - 4 часа</div>
                         </div>
                     </div>
-                    <div class="section-work__block">
+                    <div class="section-work__block none">
                         <div class="section-work__block-img">
                             <img src="img/work/icon2.png" alt="Icon1">
                         </div>
@@ -218,7 +220,7 @@
                             <div class="section-work__block-time">Время: 2 часа</div>
                         </div>
                     </div>
-                    <div class="section-work__block">
+                    <div class="section-work__block none">
                         <div class="section-work__block-img">
                             <img src="img/work/icon4.png" alt="Icon1">
                         </div>
@@ -242,28 +244,31 @@
             </div>
         </section>
 
-        <section class="section-contacts" id="contacts">
+        <section class="section-contacts none" id="contacts">
             <div class="container">
                 <h2 class="section-contacts__title">Контакты</h2>
 
                 <div class="section-contacts__wrapper">
-                    <div class="contacts-background"></div>
                     <div class="section-contacts__content">
                         <div class="section-contacts__desc">Если вы ищите специалиста по верстке сайтов, front-end разработчика в команду или для работы над проектом —  напишите мне.</div>
 
                         <div class="section-contacts__info">
-                            <ul class="contacts-type">
-                                <li>Email</li>
-                                <li>Skype</li>
-                                <li>Телефон</li>
-                                <li>Адрес</li>
-                            </ul>
-                            <ul class="contacts-data">
-                                <li><a href="mailto:info@webcademy.ru">Andreyka-kim-1997@mail.ru</a></li>
-                                <li>Отстутствует</li>
-                                <li><a href="tel:+821057737357">+82 10 5773 7357</a></li>
-                                <li>Сеул, Южная Корея</li>
-                            </ul>
+                            <div class="contacts__row">
+                                <div class="contacts-type">Email</div>
+                                <div class="contacts-data"><a href="mailto:info@webcademy.ru">Andreyka-kim-1997@mail.ru</a></div>
+                            </div>
+                            <div class="contacts__row">
+                                <div class="contacts-type">Skype</div>
+                                <div class="contacts-data">Отстутствует</div>
+                            </div>
+                            <div class="contacts__row">
+                                <div class="contacts-type">Телефон</div>
+                                <div class="contacts-data"><a href="tel:+821057737357">+82 10 5773 7357</a></div>
+                            </div>
+                            <div class="contacts__row">
+                                <div class="contacts-type">Адрес</div>
+                                <div class="contacts-data">Сеул, Южная Корея</div>
+                            </div>
                         </div>
 
                         <div class="header__bottom-icons contact-icons">
@@ -311,16 +316,18 @@
         </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer none">
         <div class="container">
-            <div class="footer__copyright">© 2019 — Андрей Ким</div>
+            <div class="footer__copyright">© 2019 — Андрей Ким </div>
+            <div class="footer__desc">
                 <p>Веб-разработик из Алматы, занимаюсь версткой и созданием сайтов. </p>
-                Этот сайт сделал в рамках прохождения обучения по верстке на курсах от <a class="footer__link" href="https://webcademy.ru/">WebCademy.ru</a></div>
+                <p> Этот сайт сделал в рамках прохождения обучения по верстке на курсах от <a class="footer__link" href="https://webcademy.ru/">WebCademy.ru</a></p>
+            </div>
         </div>
     </footer>
 
-    <script src="https://kit.fontawesome.com/12fc8f6466.js" crossorigin="anonymous"></script>
     <script src="libs/jquery/jquery-3.4.1.min.js"></script>
+    <script src="https://kit.fontawesome.com/12fc8f6466.js" crossorigin="anonymous"></script>
     <script src="libs/mixitup2/jquery.mixitup.min.js"></script>
     <script src="libs/jquery.validate/jquery.validate.js"></script>
     <script src="libs/nav.js/nav.js"></script>

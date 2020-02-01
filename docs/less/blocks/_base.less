@@ -27,8 +27,19 @@ body{
 
 .container{
     width: 100%;
-    max-width: 1140px;
+    max-width: 290px;
     margin: 0 auto;
+
+    @media (min-width:768px){
+        max-width: 708px;
+
+    }
+    
+    @media (min-width:1200px){
+        max-width: 1200px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
 }
 
 .center{
