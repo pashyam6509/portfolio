@@ -1868,6 +1868,7 @@ button {
   right: 50px;
   top: 50%;
   z-index: 100;
+  display: none;
 }
 #page-nav li {
   width: 14px;
@@ -1884,9 +1885,14 @@ button {
 #page-nav li.active {
   background-color: #ea736d;
 }
+@media (min-width: 1200px) {
+  #page-nav {
+    display: block;
+  }
+}
 .portfolio-header--white {
   background-color: #fff;
-  padding-bottom: 90px;
+  margin-bottom: 90px;
 }
 .mediamarket__title {
   font-size: 48px;
