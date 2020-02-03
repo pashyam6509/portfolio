@@ -1,9 +1,7 @@
 $(document).ready(function (){
     $('#portfolio-projects1').mixItUp();
     $('#portfolio-projects2').mixItUp();
-    $('#portfolio-projects3').mixItUp();
-    $('#portfolio-projects4').mixItUp();
-    $('#portfolio-projects2').mixItUp();
+    // $('#portfolio-projects3').mixItUp();
 
 });
 
@@ -75,6 +73,15 @@ function ajaxFormSubmit() {
 
     return false;
 }
+
+$('#backTop').hide();
+$(window).scroll(function () {
+    if($(this).scrollTop() > 200){
+        $('#backTop').fadeIn();
+    } else {
+        $('#backTop').fadeOut();
+    }
+})
 
 
 $(document).ready(function (){

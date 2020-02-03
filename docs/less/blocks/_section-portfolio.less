@@ -35,7 +35,6 @@
         margin-bottom: 60px;
     }
       
-
     &::after{
         content: '';
         background-color: rgb(251, 220, 77);
@@ -61,10 +60,6 @@
         background-color:#ea736d;
     }  
 }
-
-// .portfolio__title:hover::after{
-//     background-color:#ea736d;
-// }
 
 .portfolio__works{
     display: none;
@@ -113,7 +108,6 @@
         
     }
 }
-
 .active{
     color: #ed574f;
 }
@@ -138,6 +132,7 @@
 .portfolio__wrapper2{
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 45px;
 
@@ -145,14 +140,11 @@
         flex-direction: row;
         justify-content: space-between;
         margin-bottom: 40px;
-
     }
-    
     @media (min-width:1200px){
         margin-bottom: 65px;
     }
 }
-
 
 .portfolio__works-link--all{
     font-size: 20px;
@@ -168,9 +160,6 @@
     }
        
 }
-
-
-
 .portfolio__card{
     width: 100%;
     margin-bottom: 45px;
@@ -194,10 +183,9 @@
     
    
     @media (min-width:768px){
+        width: 339px;
         max-width: 339px;
-        margin-bottom:0 ;
-
-       
+        margin-bottom:0 ; 
     }
         
     @media (min-width:1200px){
@@ -206,26 +194,11 @@
     }
 }
 
-#portfolio__card-display{
-    display: inline-block;
-    @media (min-width:768px){
-        display: none !important;
-
-    }
-    
-    @media (min-width:1200px){
-        display: inline-block !important;
-        
-    }
-}
-
-
 .card__img{
     display: block;
     position: relative;
     cursor: pointer;
     transition: .5s all;
-
     &::before{
         content: "";
         position: absolute;
@@ -238,17 +211,8 @@
         opacity: 0.8;
         z-index: 4;
 
-        // display: none;
         transform: translateY(100%);
         transition: 0.7s;
-    }
-
-    @media (min-width:768px){
-
-    }
-    
-    @media (min-width:1200px){
-        
     }
 }
 .card__button{
@@ -305,15 +269,6 @@
     }
 }
 
-
-
-
-
-
-
-
-
-
 .portfolio__card-title{
     font-size: 22px;
     color: rgb(0, 0, 0);
@@ -329,9 +284,7 @@
     @media (min-width:768px){
         font-size: 24px;
         margin-bottom: 12px;
-
     }
-    
     @media (min-width:1200px){
         font-size: 32px;
         margin-bottom: 10px;
@@ -352,7 +305,6 @@
         font-size: 22px;
     }
 }
-
 .card__title{
     font-size: 22px;
     color: rgb(0, 0, 0);

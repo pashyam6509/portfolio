@@ -815,6 +815,7 @@ button {
 .portfolio__wrapper2 {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 45px;
 }
@@ -868,6 +869,7 @@ button {
 }
 @media (min-width: 768px) {
   .portfolio__card2 {
+    width: 339px;
     max-width: 339px;
     margin-bottom: 0 ;
   }
@@ -876,19 +878,6 @@ button {
   .portfolio__card2 {
     width: 360px;
     max-width: 555px;
-  }
-}
-#portfolio__card-display {
-  display: inline-block;
-}
-@media (min-width: 768px) {
-  #portfolio__card-display {
-    display: none !important;
-  }
-}
-@media (min-width: 1200px) {
-  #portfolio__card-display {
-    display: inline-block !important;
   }
 }
 .card__img {
@@ -2252,5 +2241,25 @@ button {
 }
 .burger-menu_active .burger-menu__overlay {
   display: block;
+}
+#backTop a {
+  color: #fbdc4d;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 25px;
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  #backTop a {
+    display: block;
+  }
+}
+@media (min-width: 1200px) {
+  #backTop a {
+    bottom: 40px;
+    right: 40px;
+    font-size: 40px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
