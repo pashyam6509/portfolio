@@ -118,6 +118,7 @@ button {
     width: 100%;
     max-width: 1400px;
     margin-bottom: 160px;
+    padding: 0 20px;
   }
 }
 .header__top-nav--margin {
@@ -327,7 +328,7 @@ button {
 @media (min-width: 1200px) {
   .header__title {
     font-size: 90px;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
   }
 }
 .header__title::after {
@@ -403,7 +404,7 @@ button {
 @media (min-width: 1200px) {
   .header__desc {
     padding-right: 70px;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     font-size: 24px;
   }
 }
@@ -438,8 +439,8 @@ button {
   color: #464646;
   text-align: center;
   line-height: 57px;
+  padding: 0 15px;
   display: inline-block;
-  width: 190px;
   height: 65px;
   border-radius: 32px;
   border-width: 4px;
@@ -810,7 +811,7 @@ button {
 }
 @media (min-width: 1200px) {
   .portfolio__wrapper {
-    margin-bottom: 60px;
+    margin-bottom: 20px;
     flex-wrap: wrap;
   }
 }
@@ -975,6 +976,10 @@ button {
   .card__desc {
     font-size: 18px;
   }
+}
+.portfolio__works-link--all:hover {
+  color: #039be5;
+  text-decoration: underline;
 }
 .section-work {
   padding-top: 55px;
@@ -1379,6 +1384,7 @@ button {
   position: relative;
   display: flex;
   flex-direction: column;
+  z-index: 100;
 }
 @media (min-width: 768px) {
   .section-contacts__wrapper {
@@ -1395,6 +1401,7 @@ button {
     width: 448px;
     height: 281px;
     background-image: url("../img/dots.png");
+    z-index: -1;
   }
 }
 .contacts-background {
@@ -2256,6 +2263,7 @@ button {
     bottom: 40px;
     right: 40px;
     font-size: 40px;
+    display: none;
   }
 }
 /*# sourceMappingURL=main.css.map */
