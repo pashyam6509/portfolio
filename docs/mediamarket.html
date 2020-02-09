@@ -6,11 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p:400,500,700,800|Roboto:400,400i,500,500i,700,700i&display=swap&subset=cyrillic-ext" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/mplus1p/mplus1p.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+    <div class="overlay"></div>
     <header class="portfolio-header portfolio-header--white">
-        <div class="header__top-nav header__top-nav--margin">
+        <div class="header__top-nav ">
             <a href="index.html" class="header__logo">
                 АК
             </a>
@@ -36,6 +38,37 @@
                 </a>
             </div>
         </div>
+
+        <div class="burger-menu">
+            <a href="#!" class="burger-menu__button">
+                <span class="burger-menu__lines"></span>
+            </a>
+
+            <nav class="burger-menu__nav">
+                <a href="index.html" class="burger-menu__logo">АК</a>
+                <div class="burger-menu__links">
+                    <a href="#" class="burger-menu__link">Услуги</a>
+                    <a href="#" class="burger-menu__link">Работы</a>
+                    <a href="contacts.html" class="burger-menu__link">Контакты</a>
+                </div>
+                <div class="burger-menu__social">
+                    <a class="bottom-icons-link" target=_blank href="https://github.com/pashyam6509">
+                        <img src="img/header/github.png" alt="GitHub">
+                    </a>
+                    <a class="bottom-icons-link" target=_blank href="https://t.me/pashyam6509">
+                        <img src="img/header/telegram.png" alt="Telegram">
+                    </a>
+                    <a class="bottom-icons-link" target=_blank href="https://vk.com/id547196547">
+                        <img src="img/header/vk.png" alt="Vk">
+                    </a>
+                    <a class="bottom-icons-link" target=_blank href="https://www.facebook.com/profile.php?id=100008270923968">
+                        <img src="img/header/facebook.png" alt="Facebook">
+                    </a>
+                </div>
+                <a href="mailto:info@andreyka-kin-1997@mail.ru" class="burger-menu__social-link">Andreyka-kim-1997@mail.ru</a>
+            </nav>
+            <div class="burger-menu__overlay"></div>
+        </div>
     </header>
 
     <main>
@@ -53,56 +86,60 @@
                     <div class="badge badge-php">PHP</div>
                 </div>
 
-                <div class="mediamarket__content">
+                <div class="mediamarket__content ">
                     <div class="mediamarket__info">
-                        <div class="section-mediamarket__links">
-                            <h3 class="mediamarket__links-title">Ссылки на проект</h3>
-                            <div class="mediamarket__link">
-                                    <img class="mediamarket__link-img" src="img/mediamarket/browser.png" alt="browser">
-                                    <a class="mediamarket__link-name" href="#!">Смотреть демо онлайн</a>
+                        <div class="mediamarket__left">
+                            <div class="section-mediamarket__links">
+                                <h3 class="mediamarket__links-title">Ссылки на проект</h3>
+                                <div class="mediamarket__link">
+                                        <img class="mediamarket__link-img" src="img/mediamarket/browser.png" alt="browser">
+                                        <a class="mediamarket__link-name" href="#!">Смотреть демо онлайн</a>
+                                </div>
+                                <div class="mediamarket__link">
+                                        <img class="mediamarket__link-img" src="img/mediamarket/github-brands.png" alt="browser">
+                                        <a class="mediamarket__link-name" href="#!">Код проекта на GitHub</a>
+                                </div>
                             </div>
-                            <div class="mediamarket__link">
-                                    <img class="mediamarket__link-img" src="img/mediamarket/github-brands.png" alt="browser">
-                                    <a class="mediamarket__link-name" href="#!">Код проекта на GitHub</a>
-                            </div>
+
+                            <h3 class="mediamarket__project-title">О проекте</h3>
+                            <div class="mediamarket__project-desc">Описание этого замечательного проекта. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</div>
                         </div>
 
-                        <h3 class="mediamarket__project-title">О проекте</h3>
-                        <div class="mediamarket__project-desc">Описание этого замечательного проекта. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</div>
-
-                        <h3 class="mediamarket__details-title">Детали</h3>
-                        <div class="mediamarket__details-wrapper">
-                            <div class="details-row">
-                                <div class="details__type">Клиент:</div>
-                                <div class="details__desc">ООО “Медиамаркет”</div>
-                            </div>
-                            <div class="details-row">
-                                <div class="details__type">Проект:</div>
-                                <div class="details__desc">Интернет магазин “Медиамаркет”</div>
-                            </div>
-                            <div class="details-row">
-                                <div class="details__type">Сайт:</div>
-                                <div class="details__desc"><a href="#!">mediamarket.com</a></div>
-                            </div>
-                            <div class="details-row">
-                                <div class="details__type">Верстка:</div>
-                                <div class="details__desc">Адаптивная верстка, HTML5, CSS3, Bootstrap grid, JavaScript, jQuery.</div>
-                            </div>
-                            <div class="details-row">
-                                <div class="details__type">Особенности:</div>
-                                <div class="details__desc">Мобильная навигация, мега-меню, карусель OwlCarousel, ajax корзина, предпросмотре товара, календарь, datepicker, валидация форм, маска ввода номера телефона, лайтбоксы, сортировка товаров.</div>
+                        <div class="mediamarket__right">
+                            <h3 class="mediamarket__details-title">Детали</h3>
+                            <div class="mediamarket__details-wrapper">
+                                <div class="details-row">
+                                    <div class="details__type">Клиент:</div>
+                                    <div class="details__desc">ООО “Медиамаркет”</div>
+                                </div>
+                                <div class="details-row">
+                                    <div class="details__type">Проект:</div>
+                                    <div class="details__desc">Интернет магазин “Медиамаркет”</div>
+                                </div>
+                                <div class="details-row">
+                                    <div class="details__type">Сайт:</div>
+                                    <div class="details__desc"><a href="#!">mediamarket.com</a></div>
+                                </div>
+                                <div class="details-row">
+                                    <div class="details__type">Верстка:</div>
+                                    <div class="details__desc">Адаптивная верстка, HTML5, CSS3, Bootstrap grid, JavaScript, jQuery.</div>
+                                </div>
+                                <div class="details-row">
+                                    <div class="details__type">Особенности:</div>
+                                    <div class="details__desc">Мобильная навигация, мега-меню, карусель OwlCarousel, ajax корзина, предпросмотре товара, календарь, datepicker, валидация форм, маска ввода номера телефона, лайтбоксы, сортировка товаров.</div>
+                                </div>
                             </div>
                         </div>
                     </div>
 
                     <div class="mediamarket__img">
                         <img src="img/mediamarket/mediamarket.jpg" alt="mediamarket">
-                    </div>
+                    </div> 
                     
                 </div>
-                <div class="mediamarket__buttons">
+                <div class="mediamarket__buttons ">
                     <a href="#" class="pagination-btn">Предыдущий проект</a>
-                    <a href="#" class="pagination-btn">Предыдущий проект</a>
+                    <a href="#" class="pagination-btn">Следуюий проект</a>
                 </div>
            </div>
        </section>
@@ -128,9 +165,18 @@
                 </div>
             </div>
         </div>
-        <div class="portfolio__footer-bg"></div>
+        <div class="portfolio__footer-bg">
+            <img src="img/mediamarket/mediabg.png" alt="Mediamarket">
+        </div>
     </section>
     </main>
+
+    <script src="libs/jquery/jquery-3.4.1.min.js"></script>
+    <script src="https://kit.fontawesome.com/12fc8f6466.js" crossorigin="anonymous"></script>
+    <script src="libs/mixitup2/jquery.mixitup.min.js"></script>
+    <script src="libs/jquery.validate/jquery.validate.js"></script>
+    <script src="libs/nav.js/nav.js"></script>
+    <script src="js/main.js"></script>
     
 </body>
 </html>

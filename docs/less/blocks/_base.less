@@ -22,7 +22,22 @@ body{
     line-height: 1.5;
     position: relative;
     // font-family: 'Roboto', sans-serif;
-    font-family: 'M PLUS 1p', sans-serif;
+    font-family: 'M PLUS 1p';
+}
+
+.overlay{
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 10;
+}
+
+.overlay.show{
+    display: block;
 }
 
 .container{
@@ -32,13 +47,11 @@ body{
 
     @media (min-width:768px){
         max-width: 708px;
-
     }
     
     @media (min-width:1200px){
-        max-width: 1200px;
-        padding-left: 30px;
-        padding-right: 30px;
+        max-width: 1140px;
+        padding: 0;
     }
 }
 

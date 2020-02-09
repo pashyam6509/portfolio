@@ -1,4 +1,4 @@
-$(document).ready(function (){
+$(document).ready(function () {
     $('#portfolio-projects1').mixItUp();
     $('#portfolio-projects2').mixItUp();
     // $('#portfolio-projects3').mixItUp();
@@ -8,26 +8,30 @@ $(document).ready(function (){
 const formRows = document.querySelectorAll('.form-row')
 const formRowsInputs = document.querySelectorAll('.form-row__input')
 
-for (let i = 0; i < formRows.length; i++){
+for (let i = 0; i < formRows.length; i++) {
     formRows[i].addEventListener('click', function () {
         const placeholderElement = this.querySelector('.fake-placeholder')
         placeholderElement.classList.add('active')
     })
 }
 
-for (let i = 0; i < formRowsInputs.length; i++){
-    formRowsInputs[i].addEventListener('blur', function(){
+for (let i = 0; i < formRowsInputs.length; i++) {
+    formRowsInputs[i].addEventListener('blur', function () {
         const thisParent = this.parentElement;
 
-        if (this.value == ''){
+        if (this.value == '') {
             thisParent.querySelector('span').classList.remove('active');
         }
+    })
+    formRowsInputs[i].addEventListener('keypress', function () {
+        const thisParent = this.parentElement;
+        thisParent.querySelector('span').classList.add('active');
     })
 }
 
 // form validate
 $('#contact-form').validate({
-    rules:{
+    rules: {
         email: {
             required: true,
             email: true
@@ -35,11 +39,11 @@ $('#contact-form').validate({
         theme: {
             required: true
         },
-        message:{
-            required:true
+        message: {
+            required: true
         }
     },
-    messages:{
+    messages: {
         email: {
             required: 'Введите ваш Email',
             email: 'Отсутствует символ @'
@@ -51,10 +55,10 @@ $('#contact-form').validate({
             required: 'Введите текст сообщения'
         }
     },
-    submitHandler: function (form){
-     ajaxFormSubmit(); 
+    submitHandler: function (form) {
+        ajaxFormSubmit();
     }
-}); 
+});
 
 function ajaxFormSubmit() {
     let string = $("#contact-form").serialize(); //сохранение всех данных введеннуб в форму
@@ -76,7 +80,7 @@ function ajaxFormSubmit() {
 
 $('#backTop').hide();
 $(window).scroll(function () {
-    if($(this).scrollTop() > 200){
+    if ($(this).scrollTop() > 200) {
         $('#backTop').fadeIn();
     } else {
         $('#backTop').fadeOut();
@@ -84,12 +88,12 @@ $(window).scroll(function () {
 })
 
 
-$(document).ready(function (){
+$(document).ready(function () {
     $('#page-nav').onePageNav({
-        currentClass:'active',
-        changeHash:false,
-        scrollSpeed:500,
-        scrollThreshold:0.5,
+        currentClass: 'active',
+        changeHash: false,
+        scrollSpeed: 500,
+        scrollThreshold: 0.5,
         filter: '',
         easing: 'swing',
         begin: function () {},
@@ -113,13 +117,15 @@ function burgerMenu(selector) {
     links.on('click', () => toggleMenu());
     overlay.on('click', () => toggleMenu());
 
-    function toggleMenu(){
+    function toggleMenu() {
         menu.toggleClass('burger-menu_active');
 
-        if (menu.hasClass('burger-menu_active')){
+        if (menu.hasClass('burger-menu_active')) {
             $('body').css('overflow', 'hidden');
+            $('.overlay').addClass('show');
         } else {
             $('body').css('overflow', 'visible');
+            $('.overlay').removeClass('show');
         }
     }
 }

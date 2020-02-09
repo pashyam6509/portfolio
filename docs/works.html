@@ -6,9 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p:400,500,700,800|Roboto:400,400i,500,500i,700,700i&display=swap&subset=cyrillic-ext" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/mplus1p/mplus1p.css">
     <link rel="stylesheet" href="css/main.css">
+    
 </head>
 <body class="bg">
+    <div class="overlay"></div>
     <header class="portfolio-header">
         <div class="header__top-nav header__top-nav--margin">
             <a href="index.html" class="header__logo">
@@ -19,7 +22,7 @@
                 <ul class="nav__list">
                     <li><a class="nav__link"  href="index.html">Главная</a></li>
                     <li><a class="nav__link"  href="works.html">Работы</a></li>
-                    <li><a class="nav__link"  href="#!">Контакты</a></li>
+                    <li><a class="nav__link"  href="contacts.html">Контакты</a></li>
                 </ul>
             </div>
     
@@ -86,32 +89,28 @@
 
                 <div class="portfolio__wrapper" id="portfolio-projects1">
                     <div class="portfolio__card mix">
-                        <div class="card__img-wrapper">
-                            <div class="card__img">
-                                <img class="portfolio__card-img" src="./img/portfolio/foresr-travel.jpg" alt="ForestTravel">
-                            </div>
-                            <a href="#" class="card__button">Смотреть проект</a>
+                        <div href="mediamarket.html" class="card__img-wrapper">
+                            <img class="portfolio__card-img" src="./img/portfolio/forest.jpg" alt="ForestTravel">
+                            <a href="mediamarket.html" class="card__button">Смотреть проект</a>
                         </div>
-                        <h4 class="portfolio__card-title">Верстка “Форест тревел”</h4>
+                        <a href="mediamarket.html" class="portfolio__card-title">Верстка “Форест тревел”</a>
                         <div class="portfolio__card-desc">Верстка многостраничного сайта. </div>
                     </div>
                     <div class="portfolio__card mix">
                         <div class="card__img-wrapper">
-                            <div class="card__img">
-                                <img class="portfolio__card-img" src="./img/portfolio/dream.jpg" alt="Dream">
-                            </div>
-                            <a href="#" class="card__button">Смотреть проект</a>
+                            <img class="portfolio__card-img" src="./img/portfolio/unit.jpg" alt="Dream">
+                            <a href="#!" class="card__button">Смотреть проект</a>
                         </div>
-                        <h4 class="portfolio__card-title">Верстка “Форест тревел”</h4>
-                        <div class="portfolio__card-desc">Верстка многостраничного сайта. </div>
+                        <a class="portfolio__card-title">Cайт для коворкинга "Юнит"</a>
+                        <div class="portfolio__card-desc">Верстка лендинга с адаптивом. </div>
                     </div>
                 </div>
 
-                <div class="portfolio__wrapper" id="portfolio-projects2">
+                <!-- <div class="portfolio__wrapper" id="portfolio-projects2">
                     <div class="portfolio__card2 mix bootstrap">
                         <div class="card__img-wrapper">
                             <img class="portfolio__card-img" src="./img/portfolio/coffee.jpg" alt="Coffee">
-                            <a href="#!" class="card__button">Смотреть проект</a>
+                            <a href="mediamarket.html" class="card__button">Смотреть проект</a>
                         </div>        
                         <h4 class="card__title">Верстка “Мир Авто”</h4>
                         <div class="card__desc">Верстка многостраничного сайта. </div>
@@ -186,7 +185,7 @@
                         <h4 class="card__title">Верстка “Мир Авто”</h4>
                         <div class="card__desc">Верстка многостраничного сайта. </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </section>
 
@@ -212,7 +211,9 @@
                     </div>
                 </div>
             </div>
-            <div class="portfolio__footer-bg"></div>
+            <div class="portfolio__footer-bg">
+                <img src="img/mediamarket/mediabg.png" alt="Media">
+            </div>
         </section>
     </main>
     
