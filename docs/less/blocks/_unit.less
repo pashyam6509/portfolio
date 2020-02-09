@@ -1,4 +1,4 @@
-.foresttravel__title{
+.unit__title{
     font-size: 30px;
     font-weight: 800;
     color: rgb(0, 0, 0);
@@ -17,14 +17,12 @@
         font-size: 48px;   
     }
     span{
-        display: none;
-
         content: '';
         position: absolute;
-        left: -3px;
+        left: 70px;
         top: 23px;
 
-        width: 295px;
+        width: 155px;
         height: 12px;
 
         background-color: rgb(251, 220, 77);
@@ -36,16 +34,20 @@
             content: '';
             position: absolute;
 
-            left: 123px;
-            top: 98px;
+            left: 14px;
+            top: 70px;
 
-            width: 355px;
+            width: 123px;
             height: 12px;
 
             background-color: rgb(251, 220, 77);
             z-index: -1;
 
             transition: all 0.5s ease-in;
+            @media (min-width:768px){
+                display: none;
+
+            }
 
             @media (min-width:1200px){
                 display: none;
@@ -56,9 +58,9 @@
             content: '';
             position: absolute;
             bottom: -36px;
-            left: 70px;
+            left: -20px;
 
-            width: 155px;
+            width: 190px;
             height: 12px;
 
             background-color: rgb(251, 220, 77);
@@ -68,24 +70,24 @@
             
             @media (min-width:768px){
                 bottom: -47px;
-                left: 232px;
-                width: 133px;
+                left: 150px;
+                width: 170px;
             }
             @media (min-width:1200px){
-                width: 400px;
+                width: 193px;
                 bottom: -58px;
-                left: 217px;
+                left: 170px;
             }
         }
         @media (min-width:768px){
             display: block;
             top: 35px;
-            width: 600px;
-            left: 55px;
+            width: 475px;
+            left: -5px;
             margin-bottom: 40px;
         }
         @media (min-width:1200px){
-            width: 840px;  
+            width: 535px;  
             left: -3px;  
             top: 41px;  
             margin-bottom: 45px;
@@ -99,77 +101,10 @@
             &::before{
                 background-color:#ea736d;
             }
-        }
-    }
-}
 
-.foresttravel__content{
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: space-between;
-
-    margin-bottom: 45px;
-    @media (min-width:768px){
-        margin-bottom: 50px;
-    }
-    @media (min-width:1200px){
-        flex-direction: row;
-        margin-bottom: 100px;      
-    }
-}
-
-.foresttravel__info{
-    width: 100%;
-    max-width: 100%;
-    display: flex;
-    flex-direction: column;
-    @media (min-width:768px){
-        flex-direction: row;
-        justify-content: space-between;
-        
-    }
-    @media (min-width:1200px){
-        max-width: 458px; 
-        flex-direction: column;
-        justify-content: center;
-    }
-}
-
-.foresttravel__left{
-    width: 100%;
-    @media (min-width:768px){
-        width: 340px;
-
-    }
-    @media (min-width:1200px){
-        width: 100%;
-        margin-bottom: 40px;
-    }
-}
-
-.foresttravel__img{
-    margin: 0 auto;
-    margin-bottom: 55px;
-
-    @media (min-width:768px){
-        margin-bottom: 50px;
-
-    }
-    @media (min-width:1200px){
-        margin: 0;
-
-    }
-    img{
-        max-width: 100%;
-        object-fit: cover;
-        box-shadow: 20px 20px 100px #c4dbe9;
-
-        @media (min-width:768px){
-            max-width: 652px;
-
-        }
-        @media (min-width:1200px){
-            max-width: 652px;      
+            &:after{
+                background-color:#ea736d;
+            }
         }
     }
 }
