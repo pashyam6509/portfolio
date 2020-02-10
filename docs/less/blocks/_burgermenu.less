@@ -122,9 +122,12 @@
     height: 100%;
     background-color: #fff;
     overflow-y: auto;
-    left: 100%;
+    // left: 100%;
+    right: 0;
+    transform: translateX(105%);
     top: 0;
     transition: 0.5s;
+    max-width: 339px;
 
     @media (min-width:768px){
         width: 339px;
@@ -135,8 +138,9 @@
 
 .burger-menu_active{
     .burger-menu__nav{
-        left: unset;
-        right: 0;
+        // left: unset;
+        // right: 0;
+        transform: translateX(0%);
     }
 }
 

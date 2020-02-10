@@ -210,7 +210,7 @@ button {
   content: '';
   position: absolute;
   bottom: 3px;
-  left: 0;
+  left: -5px;
   width: 0;
   height: 5px;
   background-color: #fbdc4d;
@@ -218,7 +218,7 @@ button {
   z-index: -1;
 }
 .nav__link:hover::after {
-  width: 100%;
+  width: 112%;
 }
 .header__social {
   display: none;
@@ -842,7 +842,7 @@ button {
 }
 .portfolio__card {
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 @media (min-width: 768px) {
   .portfolio__card {
@@ -1815,6 +1815,8 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
+  z-index: 100;
 }
 .portfolio__footer-content p {
   margin-bottom: 40px;
@@ -2392,6 +2394,7 @@ button {
 }
 .pagination-btn:first-child {
   border-bottom: 1px solid #fff;
+  display: none;
 }
 @media (min-width: 768px) {
   .pagination-btn {
@@ -2400,6 +2403,7 @@ button {
   }
   .pagination-btn:first-child {
     border: none;
+    display: block;
   }
 }
 @media (min-width: 1200px) {
@@ -2486,9 +2490,11 @@ button {
   height: 100%;
   background-color: #fff;
   overflow-y: auto;
-  left: 100%;
+  right: 0;
+  transform: translateX(105%);
   top: 0;
   transition: 0.5s;
+  max-width: 339px;
 }
 @media (min-width: 768px) {
   .burger-menu__nav {
@@ -2496,8 +2502,7 @@ button {
   }
 }
 .burger-menu_active .burger-menu__nav {
-  left: unset;
-  right: 0;
+  transform: translateX(0%);
 }
 .burger-menu__logo {
   font-size: 42px;
@@ -2862,5 +2867,17 @@ button {
 }
 .unit__title:hover span:after {
   background-color: #ea736d;
+}
+.mail-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .mail-wrapper {
+    flex-direction: row;
+  }
+  .mail-wrapper span {
+    padding-right: 10px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
